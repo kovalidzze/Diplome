@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.healthylifestyle">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".cardioClass"></activity>
+        <activity android:name=".handsClass" />
+        <activity android:name=".pressСlass" />
+        <activity android:name=".legsСlass" />
+        <activity android:name=".breastСlass" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".complexClass" />
+        <activity android:name=".snackСlass" />
+        <activity android:name=".desertClass" />
+        <activity android:name=".dinner2Class" />
+        <activity android:name=".dinnerClass" />
+        <activity android:name=".breakfastСlass" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,11 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".calculatekbju" />
-        <activity android:name=".recipesclass" />
-        <activity android:name=".trainingclass" />
-        <activity android:name=".favouritesclass"></activity>
-        <activity android:name=".zohclass" />
+        <activity android:name=".calculateKBJU" />
+        <activity android:name=".recipesСlass" />
+        <activity android:name=".trainingСlass" />
+        <activity android:name=".favouritesclass" />
+        <activity android:name=".zohСlass" />
     </application>
 
 </manifest>

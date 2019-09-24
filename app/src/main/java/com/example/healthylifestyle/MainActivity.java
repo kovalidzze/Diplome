@@ -41,22 +41,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
 
             case R.id.bcalculate:
-                Intent calculate_intent = new Intent(MainActivity.this, calculatekbju.class);
+                Intent calculate_intent = new Intent(MainActivity.this, calculateKBJU.class);
                 startActivity(calculate_intent);
                 break;
 
             case R.id.brecipe:
-                Intent recipe_intent = new Intent(MainActivity.this, recipesclass.class);
+                Intent recipe_intent = new Intent(MainActivity.this, recipesСlass.class);
                 startActivity(recipe_intent);
                 break;
 
             case R.id.btraining:
-                Intent training_intent = new Intent(MainActivity.this, trainingclass.class);
+                Intent training_intent = new Intent(MainActivity.this, trainingСlass.class);
                 startActivity(training_intent);
                 break;
 
             case R.id.bzogh:
-                Intent zogh_intent = new Intent(MainActivity.this, zohclass.class);
+                Intent zogh_intent = new Intent(MainActivity.this, zohСlass.class);
                 startActivity(zogh_intent);
                 break;
 

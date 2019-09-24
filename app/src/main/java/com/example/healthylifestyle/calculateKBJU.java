@@ -17,7 +17,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class calculatekbju extends AppCompatActivity implements View.OnClickListener {
+public class calculateKBJU extends AppCompatActivity implements View.OnClickListener {
 
     Spinner genderSpinner;
     EditText oldInput;
@@ -68,7 +68,7 @@ public class calculatekbju extends AppCompatActivity implements View.OnClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calculate);
+        setContentView(R.layout.calculate_activity);
         this.setTitle("Калькулятор КБЖУ");
 
         genderSpinner = (Spinner) findViewById(R.id.gender);
@@ -113,7 +113,7 @@ public class calculatekbju extends AppCompatActivity implements View.OnClickList
         if ((oldInput.getText().toString().equals("")) || (widthInput.getText().toString().equals(""))|| (growInput.getText().toString().equals("")))
 
         {
-            AlertDialog.Builder builder = new AlertDialog.Builder(calculatekbju.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(calculateKBJU.this);
             builder.setTitle("Ошибка")
                     .setMessage("Введены не все данные!")
                     .setCancelable(false)
@@ -150,7 +150,7 @@ public class calculatekbju extends AppCompatActivity implements View.OnClickList
             }
             if (exs.length() != 0)
             {
-                AlertDialog.Builder builder = new AlertDialog.Builder(calculatekbju.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(calculateKBJU.this);
                 builder.setTitle("Ошибка")
                         .setMessage(l + exs)
                         .setCancelable(false)
@@ -165,13 +165,13 @@ public class calculatekbju extends AppCompatActivity implements View.OnClickList
             }
             else {
                 double  result =  Calculator.CalorieCalculation (widthvalue, growvalue, oldvalue, actvalue, gendvalue, goalvalue);
-                int squirrels = (int) (((result * 30) / 100) / 4);
+                int protein = (int) (((result * 30) / 100) / 4);
                 int fats = (int)(((result * 30) / 100) / 9);
                 int carbohydeates = (int)(((result * 40) / 100) / 4);
                 int calories = (int) result;
                 /*Toast.makeText(getApplicationContext(), selected2, Toast.LENGTH_LONG).show();*/
                 resultOut.setText("Ккал: " + calories);
-                squirrelOut.setText("Белки: " + squirrels);
+                squirrelOut.setText("Белки: " + protein);
                 fatsOut.setText("Жиры: " + fats);
                 carbohydeatesOut.setText("Углеводы: " + carbohydeates);
             }

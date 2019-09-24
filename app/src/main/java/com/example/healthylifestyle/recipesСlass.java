@@ -12,7 +12,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class recipesclass extends AppCompatActivity {
+public class recipesСlass extends AppCompatActivity {
 
     GridView gridViewRecipe;
     String[] ingestionNames ={"Завтрак", "Обед", "Ужин", "Десерты", "Перекусы", "Готовые меню"};
@@ -23,46 +23,46 @@ public class recipesclass extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recipes);
+        setContentView(R.layout.recipes_activity);
         this.setTitle("Рецепты");
         gridViewRecipe = (GridView)findViewById(R.id.gridViewRecipe);
         final recipeAdapter recipeAdapter = new recipeAdapter();
         gridViewRecipe.setAdapter(recipeAdapter);
-        /*gridViewRecipe.setOnItemClickListener(gridviewOnItemClickListener);
+        gridViewRecipe.setOnItemClickListener(gridviewOnItemClickListener);
     }
         private GridView.OnItemClickListener gridviewOnItemClickListener = new GridView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 if (position == 0) {
-                    Intent breakfast_intent = new Intent(recipesclass.this, breakfast.class);
+                    Intent breakfast_intent = new Intent(recipesСlass.this, breakfastСlass.class);
                     startActivity(breakfast_intent);
                 }
 
                 if (position == 1) {
-                    Intent dinner_intent = new Intent(recipesclass.this, sights.class);
+                    Intent dinner_intent = new Intent(recipesСlass.this, dinnerClass.class);
                     startActivity(dinner_intent);
                 }
 
                 if (position == 2) {
-                    Intent dinner2_intent = new Intent(recipesclass.this, tours.class);
+                    Intent dinner2_intent = new Intent(recipesСlass.this, dinner2Class.class);
                     startActivity(dinner2_intent);
                 }
                 if (position == 3) {
-                    Intent dessert_intent = new Intent(recipesclass.this, save.class);
-                    startActivity(dessert_intent);
+                    Intent desert_intent = new Intent(recipesСlass.this, desertClass.class);
+                    startActivity(desert_intent);
                 }
                 if (position == 4) {
-                    Intent snack_intent = new Intent(recipesclass.this, forecast.class);
+                    Intent snack_intent = new Intent(recipesСlass.this, snackСlass.class);
                     startActivity(snack_intent);
                 }
                 if (position == 5) {
-                    Intent complex_intent = new Intent(recipesclass.this, forecast.class);
+                    Intent complex_intent = new Intent(recipesСlass.this, complexClass.class);
                     startActivity(complex_intent);
                 }
 
-            }*/
-        }
+            }
+        };
 
    private class recipeAdapter extends BaseAdapter {
 
@@ -84,9 +84,9 @@ public class recipesclass extends AppCompatActivity {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            View viewl = (View) getLayoutInflater().inflate(R.layout.cellgridrecipe,null);
-            TextView name = (TextView) viewl.findViewById(R.id.textrec);
-            ImageView image =(ImageView) viewl.findViewById(R.id.imagerec);
+            View viewl = (View) getLayoutInflater().inflate(R.layout.cellgrid,null);
+            TextView name = (TextView) viewl.findViewById(R.id.text1);
+            ImageView image =(ImageView) viewl.findViewById(R.id.image1);
             name.setText(ingestionNames[i]);
             image.setImageResource(ingestionImg[i]);
             return viewl;
