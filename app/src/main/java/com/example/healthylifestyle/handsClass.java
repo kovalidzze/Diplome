@@ -35,7 +35,7 @@ public class handsClass extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Intent intenth = new Intent();
-                intenth.setClass(handsClass.this, DetailActivity.class);
+                intenth.setClass(handsClass.this, DetailActivity6.class);
 
                 intenth.putExtra("title", position);
 

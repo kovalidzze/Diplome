@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class DetailActivity2 extends AppCompatActivity {
+public class DetailActivity6 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class DetailActivity2 extends AppCompatActivity {
 
         Intent intent1 = getIntent();
         //получаем строку и формируем имя ресурса
-        String resName = "k" + intent1.getIntExtra("title", 0);
+        String resName = "p" + intent1.getIntExtra("title", 0);
         Log.i("name", resName);
         Context context = getBaseContext(); //получаем контекст
 

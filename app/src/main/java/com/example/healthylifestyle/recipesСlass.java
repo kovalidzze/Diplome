@@ -15,9 +15,9 @@ import android.widget.TextView;
 public class recipesСlass extends AppCompatActivity {
 
     GridView gridViewRecipe;
-    String[] ingestionNames ={"Завтрак", "Обед", "Ужин", "Десерты", "Перекусы", "Готовые меню"};
+    String[] ingestionNames ={"Завтрак", "Обед", "Ужин", "Готовые меню", "Перекусы", "Десерты"};
     //String[] ingestionNames = getResources().getStringArray(R.array.r);
-    int[] ingestionImg= {R.drawable.zavtrak, R.drawable.obed, R.drawable.yjin, R.drawable.desert, R.drawable.perekus, R.drawable.comlex};
+    int[] ingestionImg= {R.drawable.zavtrak, R.drawable.obed, R.drawable.yjin, R.drawable.comlex, R.drawable.perekus, R.drawable.desert};
 
 
     @Override
@@ -49,16 +49,16 @@ public class recipesСlass extends AppCompatActivity {
                     startActivity(dinner2_intent);
                 }
                 if (position == 3) {
-                    Intent desert_intent = new Intent(recipesСlass.this, desertClass.class);
-                    startActivity(desert_intent);
+                    Intent complex_intent = new Intent(recipesСlass.this, complexClass.class);
+                    startActivity(complex_intent);
                 }
                 if (position == 4) {
                     Intent snack_intent = new Intent(recipesСlass.this, snackСlass.class);
                     startActivity(snack_intent);
                 }
                 if (position == 5) {
-                    Intent complex_intent = new Intent(recipesСlass.this, complexClass.class);
-                    startActivity(complex_intent);
+                    Intent desert_intent = new Intent(recipesСlass.this, desertClass.class);
+                    startActivity(desert_intent);
                 }
 
             }

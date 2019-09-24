@@ -35,7 +35,7 @@ public class cardioClass extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Intent intentc = new Intent();
-                intentc.setClass(cardioClass.this, DetailActivity.class);
+                intentc.setClass(cardioClass.this, DetailActivity6.class);
 
                 intentc.putExtra("title", position);
 

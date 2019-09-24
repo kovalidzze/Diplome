@@ -35,7 +35,7 @@ public class breastСlass extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Intent intentb = new Intent();
-                intentb.setClass(breastСlass.this, DetailActivity.class);
+                intentb.setClass(breastСlass.this, DetailActivity6.class);
 
                 intentb.putExtra("title", position);
 

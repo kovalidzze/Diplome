@@ -14,7 +14,7 @@ public class legsСlass extends AppCompatActivity {
     private String titleslegs[] = {
             "0. Велосипед",
             "1. Гиперэкстензия",
-            "2. Зашагивания на платформу",
+            "2. Стульчик",
             "3. Приседания",
             "4. Ягодичный мостик",
 
@@ -37,7 +37,7 @@ public class legsСlass extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Intent intentl = new Intent();
-                intentl.setClass(legsСlass.this, DetailActivity.class);
+                intentl.setClass(legsСlass.this, DetailActivity7.class);
 
                 intentl.putExtra("title", position);
 

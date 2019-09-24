@@ -36,7 +36,7 @@ public class pressСlass extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Intent intentp = new Intent();
-                intentp.setClass(pressСlass.this, DetailActivity.class);
+                intentp.setClass(pressСlass.this, DetailActivity6.class);
 
                 intentp.putExtra("title", position);
 
