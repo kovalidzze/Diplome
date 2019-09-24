@@ -36,7 +36,7 @@ public class dinnerClass extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> a, View v, int position, long id) {
                 Intent intentd = new Intent();
-                intentd.setClass(dinnerClass.this, DetailActivity.class);
+                intentd.setClass(dinnerClass.this, DetailActivity2.class);
 
                 intentd.putExtra("title", position);
 
