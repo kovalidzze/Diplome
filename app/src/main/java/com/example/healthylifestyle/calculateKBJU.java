@@ -45,7 +45,7 @@ public class calculateKBJU extends AppCompatActivity implements View.OnClickList
         activing.put(1.4, "Тренировки 4-5 раз в неделю");
         activing.put(1.5, "Интенсивные трен-ки 4-5 раз");
         activing.put(1.6, "Ежедневные тренировки");
-        activing.put(1.7, "Ежедневные интенс тренировки");
+        activing.put(1.7, "Ежедневные интенсив тренировки");
         activing.put(1.9, "Тяжелая физическая работа");
     }
 
