@@ -6,26 +6,27 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/iconhl"
+        android:icon="@mipmap/hl_round"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/iconhl_round"
+        android:roundIcon="@mipmap/hl_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cardioClass"></activity>
-        <activity android:name=".handsClass" />
-        <activity android:name=".pressСlass" />
-        <activity android:name=".legsСlass" />
-        <activity android:name=".breastСlass" />
+        <activity android:name=".Welcome_screen"></activity>
+        <activity android:name=".Training.cardioClass" />
+        <activity android:name=".Training.handsClass" />
+        <activity android:name=".Training.pressСlass" />
+        <activity android:name=".Training.legsСlass" />
+        <activity android:name=".Training.breastСlass" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".DetailActivity2" />
         <activity android:name=".DetailActivity6" />
         <activity android:name=".DetailActivity7" />
-        <activity android:name=".complexClass" />
-        <activity android:name=".snackСlass" />
-        <activity android:name=".desertClass" />
-        <activity android:name=".dinner2Class" />
-        <activity android:name=".dinnerClass" />
-        <activity android:name=".breakfastСlass" />
+        <activity android:name=".Ingestion.complexClass" />
+        <activity android:name=".Ingestion.snackСlass" />
+        <activity android:name=".Ingestion.desertClass" />
+        <activity android:name=".Ingestion.dinner2Class" />
+        <activity android:name=".Ingestion.dinnerClass" />
+        <activity android:name=".Ingestion.breakfastСlass" />
         <activity android:name=".FullImageActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -34,11 +35,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".calculateKBJU" />
-        <activity android:name=".recipesСlass" />
-        <activity android:name=".trainingСlass" />
+        <activity android:name=".Calculator_.calculateKBJU" />
+        <activity android:name=".Ingestion.recipesСlass" />
+        <activity android:name=".Training.trainingСlass" />
         <activity android:name=".favouritesclass" />
         <activity android:name=".zohСlass" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

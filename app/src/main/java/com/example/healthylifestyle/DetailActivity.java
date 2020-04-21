@@ -39,10 +39,10 @@ public class DetailActivity extends AppCompatActivity {
     {
         InputStream inputStream = context.getResources().openRawResource(resId);
 
-        InputStreamReader inputReader = new InputStreamReader(inputStream);
-        BufferedReader buffReader = new BufferedReader(inputReader);
+        InputStreamReader inputReader = new InputStreamReader(inputStream); // используется для приема данных
+        BufferedReader buffReader = new BufferedReader(inputReader); //передает информацию в виде набора символов.
         String line;
-        StringBuilder builder = new StringBuilder();
+        StringBuilder builder = new StringBuilder(); // представляет  собой динамическую строку.
 
         try {
             while (( line = buffReader.readLine()) != null) {

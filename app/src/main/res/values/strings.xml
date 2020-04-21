@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Healthy Lifestyle</string>
+    <string name="Logo">HEALTHY LIFESTYLE</string>
+    <string name="slogan">Здоровым быть модно!</string>
+    <string name="slogan2">И мы тебе в этом поможем!</string>
 </resources>

@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.healthylifestyle.Calculator_.calculateKBJU;
+import com.example.healthylifestyle.Ingestion.recipesСlass;
+import com.example.healthylifestyle.Training.trainingСlass;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button brecipe;
