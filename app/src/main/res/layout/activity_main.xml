@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:background="#A6F7A9">
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/iwelcome"
-            android:layout_width="match_parent"
-            android:layout_height="312dp"
-            app:srcCompat="@drawable/welcome" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="170dp"
             android:gravity="center"
-            android:layout_marginTop="5dp"
             android:orientation="vertical">
 
 
@@ -29,9 +23,9 @@
                 android:id="@+id/bcalculate"
                 style="@android:style/Widget.Button"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
                 android:text="Рассчитать КБЖУ" />
 
             <Button
@@ -59,12 +53,13 @@
                 android:text="Советы по ведению ЗОЖ" />
 
             //Button
-                /*android:id="@+id/bfavorites"
-                style="@android:style/Widget.Button"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:text="Избранное" */
+            /*android:id="@+id/bfavorites"
+            style="@android:style/Widget.Button"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Избранное" */
+
             <Button
                 android:id="@+id/boutput"
                 style="@android:style/Widget.Button"

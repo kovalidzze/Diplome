@@ -18,7 +18,7 @@ public class DetailActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.detail_activity_l);
         WebView webView = findViewById(R.id.webView);
 
         Intent intent1 = getIntent();

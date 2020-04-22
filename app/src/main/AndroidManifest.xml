@@ -11,23 +11,24 @@
         android:roundIcon="@mipmap/hl_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Welcome_screen"></activity>
-        <activity android:name=".Training.cardioClass" />
-        <activity android:name=".Training.handsClass" />
-        <activity android:name=".Training.pressСlass" />
-        <activity android:name=".Training.legsСlass" />
-        <activity android:name=".Training.breastСlass" />
+        <activity android:name=".BodyParamsActivity"></activity>
+        <activity android:name=".WelcomeScreenActivity" />
+        <activity android:name=".Training.cardioActivity" />
+        <activity android:name=".Training.handsActivity" />
+        <activity android:name=".Training.pressActivity" />
+        <activity android:name=".Training.legsActivity" />
+        <activity android:name=".Training.breastActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".DetailActivity2" />
         <activity android:name=".DetailActivity6" />
         <activity android:name=".DetailActivity7" />
-        <activity android:name=".Ingestion.complexClass" />
-        <activity android:name=".Ingestion.snackСlass" />
-        <activity android:name=".Ingestion.desertClass" />
-        <activity android:name=".Ingestion.dinner2Class" />
-        <activity android:name=".Ingestion.dinnerClass" />
-        <activity android:name=".Ingestion.breakfastСlass" />
-        <activity android:name=".FullImageActivity" />
+        <activity android:name=".Ingestion.complexActivity" />
+        <activity android:name=".Ingestion.snackActivity" />
+        <activity android:name=".Ingestion.desertActivity" />
+        <activity android:name=".Ingestion.dinner2Activity" />
+        <activity android:name=".Ingestion.dinnerActivity" />
+        <activity android:name=".Ingestion.breakfastActivity" />
+        <activity android:name=".FullImage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,10 +37,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Calculator_.calculateKBJU" />
-        <activity android:name=".Ingestion.recipesСlass" />
-        <activity android:name=".Training.trainingСlass" />
-        <activity android:name=".favouritesclass" />
-        <activity android:name=".zohСlass" />
+        <activity android:name=".Ingestion.recipesActivity" />
+        <activity android:name=".Training.trainingActivity" />
+        <activity android:name=".favouritesActivity" />
+        <activity android:name=".zohActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

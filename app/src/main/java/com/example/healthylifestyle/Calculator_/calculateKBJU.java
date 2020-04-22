@@ -70,7 +70,7 @@ public class calculateKBJU extends AppCompatActivity implements View.OnClickList
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calculate_activity);
+        setContentView(R.layout.calculate_layot);
         this.setTitle("Калькулятор КБЖУ");
 
         genderSpinner = (Spinner) findViewById(R.id.gender);
@@ -166,7 +166,7 @@ public class calculateKBJU extends AppCompatActivity implements View.OnClickList
                 alert.show();
             }
             else {
-                double  result =  Calculator.CalorieCalculation (widthvalue, growvalue, oldvalue, actvalue, gendvalue, goalvalue);
+                double  result =  CalculatorActivity.CalorieCalculation (widthvalue, growvalue, oldvalue, actvalue, gendvalue, goalvalue);
                 int protein = (int) (((result * 30) / 100) / 4);
                 int fats = (int)(((result * 30) / 100) / 9);
                 int carbohydeates = (int)(((result * 40) / 100) / 4);

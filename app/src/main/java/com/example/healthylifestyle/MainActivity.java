@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.healthylifestyle.Calculator_.calculateKBJU;
-import com.example.healthylifestyle.Ingestion.recipesСlass;
-import com.example.healthylifestyle.Training.trainingСlass;
+import com.example.healthylifestyle.Ingestion.recipesActivity;
+import com.example.healthylifestyle.Training.trainingActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
        /* this.setTitle("Калькулятор КБЖУ");*/
         brecipe = (Button) findViewById(R.id.brecipe);
         brecipe.setOnClickListener(this);
@@ -45,22 +46,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
 
             case R.id.bcalculate:
-                Intent calculate_intent = new Intent(MainActivity.this, calculateKBJU.class);
+                Intent calculate_intent = new Intent(MainActivity.this, WelcomeScreenActivity.class);
                 startActivity(calculate_intent);
                 break;
 
             case R.id.brecipe:
-                Intent recipe_intent = new Intent(MainActivity.this, recipesСlass.class);
+                Intent recipe_intent = new Intent(MainActivity.this, recipesActivity.class);
                 startActivity(recipe_intent);
                 break;
 
             case R.id.btraining:
-                Intent training_intent = new Intent(MainActivity.this, trainingСlass.class);
+                Intent training_intent = new Intent(MainActivity.this, trainingActivity.class);
                 startActivity(training_intent);
                 break;
 
             case R.id.bzogh:
-                Intent zogh_intent = new Intent(MainActivity.this, zohСlass.class);
+                Intent zogh_intent = new Intent(MainActivity.this, zohActivity.class);
                 startActivity(zogh_intent);
                 break;
 

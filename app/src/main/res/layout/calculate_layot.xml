@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anotherback"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Выберите пол" />
+
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/oldLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Возраст" />
+
+        <EditText
+            android:id="@+id/oldInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш возраст"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вес" />
+
+        <EditText
+            android:id="@+id/widthInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш вес"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/growLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рост" />
+
+        <EditText
+            android:id="@+id/growInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите ваш рост"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/activeLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Тип активности" />
+
+        <Spinner
+            android:id="@+id/activ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/goalLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Цель" />
+
+        <Spinner
+            android:id="@+id/goal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/resultbtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dp"
+            android:gravity="center"
+            android:text="Результаты расчёта"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resultOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:layout_marginRight="5pt"
+            android:gravity="center_horizontal"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/squirrelOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:layout_marginRight="5pt"
+            android:gravity="center_horizontal"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/fatsOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:layout_marginRight="5pt"
+            android:gravity="center_horizontal"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/carbohydeatesOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5pt"
+            android:layout_marginTop="3pt"
+            android:layout_marginRight="5pt"
+            android:gravity="center_horizontal"
+            android:textSize="12pt" />
+    </LinearLayout>
+</ScrollView>
