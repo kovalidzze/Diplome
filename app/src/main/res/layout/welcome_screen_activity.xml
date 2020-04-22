@@ -37,7 +37,7 @@
             android:gravity="center_horizontal"
             android:text="@string/Logo"
             android:textColor="@android:color/background_light"
-            android:textSize="42dp" />
+            android:textSize="40dp" />
 
         <TextView
             android:id="@+id/textSlogan"
