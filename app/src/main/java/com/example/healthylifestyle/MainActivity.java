@@ -51,12 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.brecipe:
-                Intent recipe_intent = new Intent(MainActivity.this, recipesActivity.class);
+                Intent recipe_intent = new Intent(MainActivity.this, PersonInformationActivity.class);
                 startActivity(recipe_intent);
                 break;
 
             case R.id.btraining:
-                Intent training_intent = new Intent(MainActivity.this, trainingActivity.class);
+                Intent training_intent = new Intent(MainActivity.this, BodyParamsActivity.class);
                 startActivity(training_intent);
                 break;
 

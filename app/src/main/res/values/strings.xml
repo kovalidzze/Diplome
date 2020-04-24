@@ -3,4 +3,8 @@
     <string name="Logo">HEALTHY LIFESTYLE</string>
     <string name="slogan">Здоровым быть модно!</string>
     <string name="slogan2">И мы тебе в этом поможем!</string>
+    <string name="personInfText">Привет, дорогой мой друг! Запомни этот день - именно сегодня ты встал на тропу здорового образа жизни, и твоя жизнь кардинально изменится!</string>
+    <string name="personInfText2">Прежде чем начать — заполни информацию о себе.</string>
+    <string name="BodyInfText">Заполни параметры своего тела, чтобы в дальнейшем следить за изменениями</string>
+
 </resources>

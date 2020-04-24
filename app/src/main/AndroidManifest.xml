@@ -10,8 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/hl_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".BodyParamsActivity"></activity>
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        //android:theme="@style/AppTheme">
+
+        <activity android:name=".PersonInformationActivity"></activity>
+        <activity android:name=".BodyParamsActivity" />
         <activity android:name=".WelcomeScreenActivity" />
         <activity android:name=".Training.cardioActivity" />
         <activity android:name=".Training.handsActivity" />
