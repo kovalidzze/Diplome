@@ -19,7 +19,7 @@ import com.example.healthylifestyle.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class calculateKBJU extends AppCompatActivity implements View.OnClickListener {
+public class CalculateActivity extends AppCompatActivity implements View.OnClickListener {
 
     Spinner genderSpinner;
     EditText oldInput;
@@ -115,7 +115,7 @@ public class calculateKBJU extends AppCompatActivity implements View.OnClickList
         if ((oldInput.getText().toString().equals("")) || (widthInput.getText().toString().equals(""))|| (growInput.getText().toString().equals("")))
 
         {
-            AlertDialog.Builder builder = new AlertDialog.Builder(calculateKBJU.this);
+            AlertDialog.Builder builder = new AlertDialog.Builder(CalculateActivity.this);
             builder.setTitle("Ошибка")
                     .setMessage("Введены не все данные!")
                     .setCancelable(false)
@@ -152,7 +152,7 @@ public class calculateKBJU extends AppCompatActivity implements View.OnClickList
             }
             if (exs.length() != 0)
             {
-                AlertDialog.Builder builder = new AlertDialog.Builder(calculateKBJU.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(CalculateActivity.this);
                 builder.setTitle("Ошибка")
                         .setMessage(l + exs)
                         .setCancelable(false)
@@ -166,7 +166,7 @@ public class calculateKBJU extends AppCompatActivity implements View.OnClickList
                 alert.show();
             }
             else {
-                double  result =  CalculatorActivity.CalorieCalculation (widthvalue, growvalue, oldvalue, actvalue, gendvalue, goalvalue);
+                double  result =  Calculator.CalorieCalculation (widthvalue, growvalue, oldvalue, actvalue, gendvalue, goalvalue);
                 int protein = (int) (((result * 30) / 100) / 4);
                 int fats = (int)(((result * 30) / 100) / 9);
                 int carbohydeates = (int)(((result * 40) / 100) / 4);

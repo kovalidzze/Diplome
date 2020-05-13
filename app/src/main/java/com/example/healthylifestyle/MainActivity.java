@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.healthylifestyle.Calculator_.calculateKBJU;
-import com.example.healthylifestyle.Ingestion.recipesActivity;
-import com.example.healthylifestyle.Training.trainingActivity;
+import com.example.healthylifestyle.Calculator_.CalculateActivity;
+import com.example.healthylifestyle.Calculator_.Calculator;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.bzogh:
-                Intent zogh_intent = new Intent(MainActivity.this, zohActivity.class);
+                Intent zogh_intent = new Intent(MainActivity.this, CalculateActivity.class);
                 startActivity(zogh_intent);
                 break;
 

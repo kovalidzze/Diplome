@@ -1,6 +1,6 @@
 package com.example.healthylifestyle.Calculator_;
 
-public class CalculatorActivity {
+public class Calculator {
 
     public static double CalorieCalculation(double widht, double grow, int old, double activ, double gender, int goal)
     {

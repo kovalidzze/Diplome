@@ -48,7 +48,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="164dp"
+                        android:layout_width="154dp"
                         android:layout_height="wrap_content"
                         android:gravity="left"
                         android:orientation="vertical"
@@ -188,7 +188,7 @@
                             android:id="@+id/olnLabel"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Обхват левой ноги"
+                            android:text="Обхват левого бедра"
                             android:textColor="@android:color/background_dark" />
 
                         <EditText
@@ -203,7 +203,7 @@
                             android:id="@+id/opnLabel"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Обхват правой ноги"
+                            android:text="Обхват правого бедра"
                             android:textColor="@android:color/background_dark" />
 
                         <EditText

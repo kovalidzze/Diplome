@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/tetr"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="fill_parent"
@@ -56,8 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Вес"
-            android:textStyle="bold"
-            android:textSize="19dp"/>
+            android:textSize="19dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/widthInput"
@@ -71,8 +73,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Рост"
-            android:textStyle="bold"
-            android:textSize="19dp"/>
+            android:textSize="19dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/growInput"
@@ -87,8 +89,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dip"
             android:text="Тип активности"
-            android:textStyle="bold"
-            android:textSize="19dp"/>
+            android:textSize="19dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/activ"
@@ -101,8 +103,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dip"
             android:text="Цель"
-            android:textStyle="bold"
-            android:textSize="19dp"/>
+            android:textSize="19dp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/goal"
